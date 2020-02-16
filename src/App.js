@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-
 // ele vai deixar disponível o store da aplicação para todos os componentes
 import { Provider } from 'react-redux';
+import { ToastContainer } from 'react-toastify';
 
 import './config/ReactotronConfig';
 
@@ -19,6 +19,7 @@ function App() {
         <Header />
         <GlobalStyle />
         <Routes />
+        <ToastContainer autoClose={3000} />
       </BrowserRouter>
     </Provider>
   );
