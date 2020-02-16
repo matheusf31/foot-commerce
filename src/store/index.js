@@ -1,12 +1,24 @@
 /** configuração inicial do redux */
 
-import { createStore } from 'redux';
+/**
+ * compose -> juntar várias configurações: unir por exemplo o console.tron junto com uma config de middlewares
+ */
+import { createStore, applyMiddleware, compose } from 'redux';
+
+import createSagaMiddleware from 'redux-saga';
 
 import rootReducer from './modules/rootReducer';
+import rootSaga from './modules/rootSaga';
+
+const sagaMiddleware = createSagaMiddleware();
 
 const enhancer =
-  process.env.NODE_ENV === 'development' ? console.tron.createEnhancer() : null;
+  process.env.NODE_ENV === 'development'
+    ? compose(console.tron.createEnhancer(), applyMiddleware(sagaMiddleware))
+    : applyMiddleware(sagaMiddleware);
 
 const store = createStore(rootReducer, enhancer);
+
+sagaMiddleware.run(rootSaga);
 
 export default store;
