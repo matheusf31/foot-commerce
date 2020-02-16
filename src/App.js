@@ -1,17 +1,24 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
+// ele vai deixar disponível o store da aplicação para todos os componentes
+import { Provider } from 'react-redux';
+
 import GlobalStyle from './styles/global';
 import Header from './components/Header';
 import Routes from './routes';
 
+import store from './store';
+
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <GlobalStyle />
-      <Routes />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Header />
+        <GlobalStyle />
+        <Routes />
+      </BrowserRouter>
+    </Provider>
   );
 }
 
