@@ -10,7 +10,7 @@ import { toast } from 'react-toastify';
 import api from '../../../services/api';
 import { formatPrice } from '../../../util/format';
 
-import { addToCartSucess, updateAmount } from './actions';
+import { addToCartSuccess, updateAmountSuccess } from './actions';
 
 /**
  * o * após o function quer dizer que é uma funcionalidade do JS
@@ -37,7 +37,7 @@ function* addToCart({ id }) {
   }
 
   if (productExists) {
-    yield put(updateAmount(id, amount));
+    yield put(updateAmountSuccess(id, amount));
   } else {
     // yield -> como se fosse o await
     const response = yield call(api.get, `/products/${id}`);
@@ -48,13 +48,31 @@ function* addToCart({ id }) {
       priceFormmatted: formatPrice(response.data.price),
     };
 
-    yield put(addToCartSucess(data));
+    yield put(addToCartSuccess(data));
   }
+}
+
+function* updateAmount({ id, amount }) {
+  if (amount <= 0) return;
+
+  const stock = yield call(api.get, `stock/${id}`);
+  const stockAmount = stock.data.amount;
+
+  if (amount > stockAmount) {
+    toast.error('Quantidade solicitada fora de estoque');
+    return;
+  }
+
+  yield put(updateAmountSuccess(id, amount));
 }
 
 // 1° parâmetro -> qual action queremos ouvir
 // 2° parâmetro -> qual action queremos disparar
-export default all([takeLatest('@cart/ADD_REQUEST', addToCart)]);
+// actions que o saga irá ouvir
+export default all([
+  takeLatest('@cart/ADD_REQUEST', addToCart),
+  takeLatest('@cart/UPDATE_AMOUNT_REQUEST', updateAmount),
+]);
 
 /**
  * adc carrinho
