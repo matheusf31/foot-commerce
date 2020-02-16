@@ -6,3 +6,4 @@
 - Axios: para consumirmos uma API externa;
 - Redux: para utilizarmos um 'estado global' na aplicação;
 - Reactotron-redux: para fazer o debug da aplicação integrando com as funcionalidades do redux.
+- Immer: ferramenta que lida com objetos e arrays imutáveis dentro do react ou qualquer aplicação js
