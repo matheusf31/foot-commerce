@@ -7,6 +7,7 @@ export default function cart(state = [], action) {
         // retorna a posição do array ou -1 (aqui eu encontro o produto)
         const productIndex = draft.findIndex(p => p.id === action.product.id);
 
+        // não deixa duplicar
         if (productIndex >= 0) {
           draft[productIndex].amount += 1;
         } else {
