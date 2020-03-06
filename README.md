@@ -21,7 +21,7 @@
   <a href="#como-rodar">Como rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-## :rocket: Sobre o app
+## :white_check_mark: Sobre o app
 
 Aplicação feita utilizando ReactJS, Redux e Redux Saga como principais ferramentas, e consiste em uma página de e-commerce de tênis. O Redux e o Redux Saga foram utilizados para manter um acesso global ao estado da aplicação, para que o estado possa ser acessado e/ou manipulado tanto pela página principal da aplicação, quanto no header e na página de carrinho. Além disso,  a aplicação consome uma API fake, apenas para popula-lá com dados reais.
 
@@ -43,5 +43,5 @@ Imagens/Gif da aplicação.
 - React-toastify: para envio de mensgens de erro para o usuário da aplicação;
 - History: biblioteca javascript que serve para controlarmos a parte de history API do navegador
 
-## Como rodar
+## :rocket: Como rodar
 
