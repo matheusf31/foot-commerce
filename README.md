@@ -6,22 +6,16 @@
   Arquitetura Flux
 </h3>
 
-<blockquote align="center">“Não espere resultados brilhantes se suas metas não forem claras”!</blockquote>
+<blockquote align="center">“Não espere resultados brilhantes se suas metas não forem claras”!</blockquot
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafio-07?color=%2304D361">
-
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
-</p>
-
-<p align="center">
-  <a href="#white_check_mark-sobre-o-app">Sobre o app</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#resultado">Resultado</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#sobre-o-app">Sobre o app</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#resultado">Resultado</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#ferramentas">Ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-como-rodar">Como rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-## :white_check_mark: Sobre o app
+## Sobre o app
 
 Aplicação feita utilizando ReactJS, Redux e Redux Saga como principais ferramentas, e consiste em uma página de e-commerce de tênis. O Redux e o Redux Saga foram utilizados para manter um acesso global ao estado da aplicação, para que o estado possa ser acessado e/ou manipulado tanto pela página principal da aplicação, quanto no header e na página de carrinho. Além disso,  a aplicação consome uma API fake, apenas para popula-lá com dados reais.
 
@@ -44,4 +38,24 @@ Imagens/Gif da aplicação.
 - History: biblioteca javascript que serve para controlarmos a parte de history API do navegador
 
 ## :rocket: Como rodar
+
+#### Yarn
+
+Baixe ou clone o repositório e no terminal rode:
+
+```
+$ yarn
+```
+
+Em seguida, para rodar a API fake:
+
+```
+$ yarn sequelize...
+```
+
+E por fim:
+
+```
+$ yarn start
+```
 
