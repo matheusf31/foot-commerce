@@ -43,19 +43,13 @@ Imagens/Gif da aplicação.
 
 Baixe ou clone o repositório e no terminal rode:
 
-```
-$ yarn
-```
+`$ yarn`
 
 Em seguida, para rodar a API fake:
 
-```
-$ yarn sequelize...
-```
+`$ yarn sequelize`
 
 E por fim:
 
-```
-$ yarn start
-```
+`$ yarn start`
 
