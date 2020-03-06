@@ -6,7 +6,7 @@
   Arquitetura Flux
 </h3>
 
-<blockquote align="center">“Não espere resultados brilhantes se suas metas não forem claras”!</blockquot
+<blockquote align="center">“Não espere resultados brilhantes se suas metas não forem claras”!</blockquote>
 
 <p align="center">
   <a href="#sobre-o-app">Sobre o app</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -40,6 +40,18 @@ Imagens/Gif da aplicação.
 ## :rocket: Como rodar
 
 #### Yarn
+
+Baixe ou clone o repositório e no terminal rode:
+
+`$ yarn`
+
+Em seguida, para rodar a API fake:
+
+`$ yarn sequelize`
+
+E por fim:
+
+`$ yarn start`
 
 
 
