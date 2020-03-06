@@ -17,7 +17,7 @@
 
 ## Sobre o app
 
-Aplicação feita utilizando ReactJS, Redux e Redux Saga como principais ferramentas, e consiste em uma página de e-commerce de tênis. O Redux e o Redux Saga foram utilizados para manter um acesso global ao estado da aplicação, para que o estado possa ser acessado e/ou manipulado tanto pela página principal da aplicação, quanto no header e na página de carrinho. Além disso,  a aplicação consome uma API fake, apenas para popula-lá com dados reais.
+    Aplicação feita utilizando ReactJS, Redux e Redux Saga como principais ferramentas, e consiste em uma página de e-commerce de tênis. O Redux e o Redux Saga foram utilizados para manter um acesso global ao estado da aplicação, para que o estado possa ser acessado e/ou manipulado tanto pela página principal da aplicação, quanto no header e na página de carrinho. Além disso,  a aplicação consome uma API fake, apenas para popula-lá com dados reais.
 
 ## Resultado
 
