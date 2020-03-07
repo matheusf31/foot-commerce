@@ -49,6 +49,6 @@ Em seguida, para rodar a API fake:
 
 `$ yarn json-server server.json -p 3333`
 
-E por fim, <b>em um novo terminal</b>:
+E por fim:
 
 `$ yarn start`
