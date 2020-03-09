@@ -21,7 +21,7 @@
 
 ## Resultado
 
-<img src=".github/demo.gif" height="600">
+<img src=".github/demo.gif" height="500">
 
 ## Ferramentas
 
