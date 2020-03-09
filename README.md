@@ -27,15 +27,15 @@
 
 - [React-router-dom](https://www.npmjs.com/package/react-router-dom): biblioteca para fazer o roteamento da aplicação;
 - [Styled-components](https://styled-components.com/): biblioteca para fazer a estilização da aplicação;
-- [React-icons](https://www.npmjs.com/package/react-icons): biblioteca que dispónibiliza ícones;
-- [Axios](https://github.com/axios/axios): para consumirmos uma API externa;
-- [Redux](https://redux.js.org/): para utilizarmos um 'estado global' na aplicação;
-- [Reactotron-redux](https://github.com/infinitered/reactotron/blob/master/docs/plugin-redux.md): para fazer o debug da aplicação integrando com as funcionalidades do redux;
+- [React-icons](https://www.npmjs.com/package/react-icons): biblioteca que disponibiliza ícones;
+- [Axios](https://github.com/axios/axios): para consumir uma API externa;
+- [Redux](https://redux.js.org/): para utilizar um 'estado global' na aplicação;
+- [Reactotron-redux](https://github.com/infinitered/reactotron/blob/master/docs/plugin-redux.md): para fazer o debug da aplicação de forma integrada com o redux;
 - [Immer](https://github.com/immerjs/immer): ferramenta que lida com objetos e arrays imutáveis dentro do react ou qualquer aplicação js;
 - [Redux-saga](https://redux-saga.js.org/): biblioteca para realizar chamadas com efeitos colaterais, ou seja, chamadas a API, banco de dados, etc, ao disparar uma action do redux;
 - [Reactotron-redux-saga](https://github.com/infinitered/reactotron/blob/master/docs/plugin-redux-saga.md): plugin para fazer uma integração do saga com o reactotron (para monitoriar de uma forma mais eficiente nossa aplicação);
 - [React-toastify](https://github.com/fkhadra/react-toastify): para envio de mensgens de erro para o usuário da aplicação;
-- [History](https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/history.md): biblioteca javascript que serve para controlarmos a parte de history API do navegador
+- [History](https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/history.md): biblioteca javascript que serve para controlar a parte de history API do navegador
 
 ## :rocket: Como rodar
 
