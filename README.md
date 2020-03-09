@@ -21,7 +21,7 @@
 
 ## Resultado
 
-Imagens/Gif da aplicação.
+<img src=".github/demo.gif" height="600">
 
 ## Ferramentas
 
